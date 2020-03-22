@@ -6,14 +6,14 @@ import Column from '../Column/Column';
 
 class List extends React.Component {
 
-    static propTypes = {
-      title: PropTypes.node.isRequired,
-      titleColumn: PropTypes.node,
-      children: PropTypes.node,
-    }
-    static defaultProps = {
-      children: <p>I can do all the things!!!</p>,
-    }
+  static propTypes = {
+    title: PropTypes.node.isRequired,
+    titleColumn: PropTypes.node,
+    children: PropTypes.node,
+  }
+  static defaultProps = {
+    children: <p>I can do all the things!!!</p>,
+  }
   render() {
     return (
       <section className={styles.component}>
