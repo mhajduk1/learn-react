@@ -7,12 +7,12 @@ import Column from '../Column/Column';
 class List extends React.Component {
 
     static propTypes = {
-        title: PropTypes.node.isRequired,
-        titleColumn: PropTypes.node,
-        children: PropTypes.node,
-      }
+      title: PropTypes.node.isRequired,
+      titleColumn: PropTypes.node,
+      children: PropTypes.node,
+    }
     static defaultProps = {
-        children: <p>I can do all the things!!!</p>,
+      children: <p>I can do all the things!!!</p>,
     }
   render() {
     return (
@@ -22,9 +22,9 @@ class List extends React.Component {
           {this.props.children}
         </div>
         <div className={styles.columns}>
-            <Column titleColumn={'Animals'}/>
-            <Column titleColumn={'Plants'}/>
-            <Column titleColumn={'Minerals'}/>
+          <Column titleColumn={'Animals'}/>
+          <Column titleColumn={'Plants'}/>
+          <Column titleColumn={'Minerals'}/>
         </div>
       </section>
     )

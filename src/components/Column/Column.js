@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 class Column extends React.Component {
     static propTypes = {
-        titleColumn: PropTypes.node.isRequired,
-      }
+      titleColumn: PropTypes.node.isRequired,
+    }
   render() {
     return (
       <section className={styles.component}>
