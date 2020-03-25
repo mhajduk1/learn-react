@@ -3,14 +3,20 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
-import {settings} from '../../data/dataStore';
+import {settings} from '../../data/dataStore.js';
+//import Icon from '../Icon.js';
+
 
 class Column extends React.Component {
   static propTypes = {
     titleColumn: PropTypes.node,
-    cards: PropTypes.node,
+    cards: PropTypes.array,
     name: PropTypes.node,
     addCard: PropTypes.node,
+    icon: PropTypes.string,
+  }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
   }
   
   state = {
@@ -19,7 +25,7 @@ class Column extends React.Component {
   addCard(title){
     this.setState(state => (
       {
-        columns: [
+        cards: [
           ...state.cards,
           {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
@@ -34,7 +40,11 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}</h3>
+        <h3 className={styles.title}>{this.props.title}
+        <span className={styles.icon}>
+            <Icon name={icon}/>
+        </span>
+        </h3>
         <div>
           {this.state.cards.map(({key, ...cardsProps}) => (
             <Card key={key} {...cardsProps} />
