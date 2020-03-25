@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
 import {settings} from '../../data/dataStore.js';
-//import Icon from '../Icon.js';
+import Icon from '../Icon.js';
 
 
 class Column extends React.Component {
@@ -42,7 +42,7 @@ class Column extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>{this.props.title}
         <span className={styles.icon}>
-            <Icon name={icon}/>
+            <Icon name={this.props.icon}/>
         </span>
         </h3>
         <div>
