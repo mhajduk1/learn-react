@@ -1,5 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Icon = props => (<i className={`fas fa-${props.name}`} />);
+Icon.PropTypes = {
+  name: PropTypes.node,
+};
+
+const Icon = PropTypes => (<i className={`fas fa-${PropTypes.name}`} />);
+
 
 export default Icon;

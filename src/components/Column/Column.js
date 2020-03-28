@@ -14,6 +14,7 @@ class Column extends React.Component {
     name: PropTypes.node,
     addCard: PropTypes.node,
     icon: PropTypes.string,
+    title: PropTypes.node,
   }
   static defaultProps = {
     icon: settings.defaultColumnIcon,
@@ -31,19 +32,19 @@ class Column extends React.Component {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}
-        <span className={styles.icon}>
+        <h3 className={styles.title}>{this.propsTypes.titleColumn}
+          <span className={styles.icon}>
             <Icon name={this.props.icon}/>
-        </span>
+          </span>
         </h3>
         <div>
           {this.state.cards.map(({key, ...cardsProps}) => (
@@ -54,7 +55,7 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
