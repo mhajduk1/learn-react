@@ -4,10 +4,7 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
 class Creator extends React.Component {
-  static propTypes = {
-    text: PropTypes.string,
-    action: PropTypes.function,
-  }
+  
 
   static defaultProps = {
     text: 'Add new item',
@@ -60,5 +57,10 @@ class Creator extends React.Component {
     );
   }
 }
+
+Creator.propTypes = {
+  text: PropTypes.string,
+  action: PropTypes.function,
+};
 
 export default Creator;

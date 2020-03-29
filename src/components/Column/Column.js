@@ -8,14 +8,7 @@ import Icon from '../Icon.js';
 
 
 class Column extends React.Component {
-  static propTypes = {
-    titleColumn: PropTypes.node,
-    cards: PropTypes.array,
-    name: PropTypes.node,
-    addCard: PropTypes.node,
-    icon: PropTypes.string,
-    title: PropTypes.node,
-  }
+  
   static defaultProps = {
     icon: settings.defaultColumnIcon,
   }
@@ -57,6 +50,15 @@ class Column extends React.Component {
       </section>
     );
   }
+  
 }
+Column.propTypes = {
+  titleColumn: PropTypes.node,
+  cards: PropTypes.array,
+  name: PropTypes.node,
+  addCard: PropTypes.node,
+  icon: PropTypes.string,
+  title: PropTypes.node,
+};
 
 export default Column;

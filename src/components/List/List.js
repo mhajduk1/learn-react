@@ -9,16 +9,6 @@ import Creator from '../Creator/Creator.js';
 
 class List extends React.Component {
 
-  static propTypes = {
-    title: PropTypes.node.isRequired,
-    titleColumn: PropTypes.node,
-    description: PropTypes.node,
-    icon: PropTypes.string,
-  }
-  static defaultProps = {
-    description: settings.defaultListDescription,
-    columns: PropTypes.array,
-  }
   state = {
     columns: this.defaultprops.columns || [],
   }
@@ -55,6 +45,19 @@ class List extends React.Component {
       </section>
     );
   }
+  
 }
+List.propTypes = {
+  title: PropTypes.node.isRequired,
+  titleColumn: PropTypes.node,
+  description: PropTypes.node,
+  icon: PropTypes.string,
+};
+
+List.defaultProps = {
+  description: settings.defaultListDescription,
+  columns: PropTypes.array,
+};
+
 
 export default List;

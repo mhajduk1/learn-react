@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 
 class Card extends React.Component {
 
-  static propTypes = {
-    title: PropTypes.node.isRequired,
-  }
   render() {
     return (
       <section className={styles.component}>
@@ -15,5 +12,8 @@ class Card extends React.Component {
     );
   }
 }
+Card.propTypes = {
+  title: PropTypes.node.isRequired,
+};
 
 export default Card;
