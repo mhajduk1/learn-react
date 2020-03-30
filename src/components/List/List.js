@@ -10,7 +10,7 @@ import Creator from '../Creator/Creator.js';
 class List extends React.Component {
 
   state = {
-    columns: this.defaultprops.columns || [],
+    columns: this.props.columns || [],
   }
   addColumn(title){
     this.setState(state => (
@@ -30,7 +30,7 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <Hero titleText={this.propTypes.title} image={this.propTypes.image}/>
+        <Hero titleText={this.props.titleColumn} image={this.props.image}/>
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
         </div>
@@ -45,18 +45,18 @@ class List extends React.Component {
       </section>
     );
   }
-  
 }
 List.propTypes = {
   title: PropTypes.node.isRequired,
   titleColumn: PropTypes.node,
   description: PropTypes.node,
   icon: PropTypes.string,
+  image: PropTypes.string,
+  columns: PropTypes.array,
 };
 
 List.defaultProps = {
   description: settings.defaultListDescription,
-  columns: PropTypes.array,
 };
 
 
