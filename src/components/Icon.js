@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 
-const Icon = PropTypes => (<i className={`fas fa-${PropTypes.name}`} />);
+const Icon = props => (<i className={`fas fa-${props.name}`} />);
 
 Icon.propTypes = {
   name: PropTypes.node,

@@ -25,7 +25,7 @@ class Creator extends React.Component {
 
   handleOK = () => {
     if(this.state.value != ''){
-      this.props.action(this.state.value);
+      this.propTypes.action(this.state.value);
       this.setState({
         value: '',
         visibleButtons: false,
@@ -60,7 +60,7 @@ class Creator extends React.Component {
 
 Creator.propTypes = {
   text: PropTypes.string,
-  action: PropTypes.function,
+  action: PropTypes.func,
 };
 
 export default Creator;

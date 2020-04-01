@@ -30,7 +30,7 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <Hero titleText={this.props.titleColumn} image={this.props.image}/>
+        <Hero titleText={this.props.title} image={this.props.image}/>
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
         </div>
@@ -53,10 +53,11 @@ List.propTypes = {
   icon: PropTypes.string,
   image: PropTypes.string,
   columns: PropTypes.array,
-};
 
+};
 List.defaultProps = {
   description: settings.defaultListDescription,
+  columns: PropTypes.array,
 };
 
 
