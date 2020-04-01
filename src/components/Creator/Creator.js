@@ -25,7 +25,7 @@ class Creator extends React.Component {
 
   handleOK = () => {
     if(this.state.value != ''){
-      this.propTypes.action(this.state.value);
+      this.props.action(this.state.value);
       this.setState({
         value: '',
         visibleButtons: false,

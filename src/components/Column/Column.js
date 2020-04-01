@@ -34,7 +34,7 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.titleColumn}
+        <h3 className={styles.title}>{this.props.title}&nbsp; &nbsp;
           <span className={styles.icon}>
             <Icon name={this.props.icon}/>
           </span>
@@ -53,7 +53,6 @@ class Column extends React.Component {
   
 }
 Column.propTypes = {
-  titleColumn: PropTypes.node,
   cards: PropTypes.array,
   name: PropTypes.node,
   addCard: PropTypes.node,
