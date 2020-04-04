@@ -1,5 +1,5 @@
 import {combineReducers, createStore} from 'redux';
-import initialStoreData from '../data/dataStore';
+import initialStoreData from '../../data/dataStore';
 import columnsReducer from './columnsRedux';
 
 // define initial state and shallow-merge initial data
