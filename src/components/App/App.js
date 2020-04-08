@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
 //import {pageContents, listData} from '../../data/dataStore';
 
-
 class App extends React.Component {
   render() {
     const {title, subtitle, lists} = this.props;

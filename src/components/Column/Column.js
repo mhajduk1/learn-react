@@ -32,7 +32,7 @@ class Column extends React.Component {
           ))}
         </div>
         <div>
-          <Creator text={settings.cardCreatorText} action={title => addCard(title)}/>
+          <Creator text={settings.cardCreatorText} action={addCard}/>
         </div> 
       </section>
     );
@@ -41,7 +41,6 @@ class Column extends React.Component {
 }
 Column.propTypes = {
   cards: PropTypes.array,
-  name: PropTypes.node,
   addCard: PropTypes.func,
   icon: PropTypes.string,
   title: PropTypes.node,
