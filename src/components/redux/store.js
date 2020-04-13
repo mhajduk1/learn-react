@@ -11,14 +11,14 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
-  searchString: searchReducer,
+  searchString: '',
 };
 
 // define reducers
 const reducers = {
   columns: columnsReducer,
   cards: cardsReducer,
-  search: searchReducer,
+  searchString: searchReducer,
 };
 
 // add blank reducers for initial state properties without reducers
