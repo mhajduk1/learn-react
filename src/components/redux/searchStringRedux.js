@@ -10,13 +10,13 @@ const createActionName = name => `app/${reducerName}/${name}`;
 export const SEARCH = createActionName('SEARCH');
 
 // action creators
-export const createActionSearch = payload => ({payload, type: SEARCH});
+export const createAction_changeSearchString = payload => ({payload, type: SEARCH});
 
 // reducer
 export default function reducer(statePart = '', action = {}) {
   switch (action.type) {
     case SEARCH:
-      return action.string; 
+      return action.payload; 
     default:
       return statePart;
   }
