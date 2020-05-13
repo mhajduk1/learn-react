@@ -18,3 +18,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
+//usunac search albo searchstring

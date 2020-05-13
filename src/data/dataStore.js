@@ -12,7 +12,22 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  menu: {
+    toMain: '/',
+    toInf: '/info',
+    toFAQ: '/FAQ',
+  },
+  FAQ: {
+    title: 'FAQ',
+    image: 'https://serialesrebrnegoekranu.pl/wp-content/uploads/2019/06/FAQ-Cz%C4%99%C5%9B%C4%87-2-Plakat-732x380.jpg',
+  },
+  info: {
+    title: 'INFO',
+    image: 'http://mckplonsk.pl/wp-content/uploads/2015/11/Info.jpg',
+  },
 };
+
+
 
 export const pageContents = {
   title: 'My first React app',
