@@ -1,7 +1,8 @@
 @import '../../styles/settings.scss';
 
 .component {
-  display: inline;
+  width: 100%;
+  display: flex;
 
   input {
     // flex-grow: 1;
