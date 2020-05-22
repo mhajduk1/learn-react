@@ -95,6 +95,14 @@ const lists = [
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
+// const Achievments = [
+//   {
+//     id: 'list-2',
+//     title: 'Things achieve soon',
+//     description: 'Interesting things I want to achieve',
+//     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+//   },
+// ];
 
 const columns = [
   {

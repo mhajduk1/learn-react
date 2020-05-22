@@ -5,6 +5,7 @@ import Container from '../Container/Container';
 import {settings} from '../../data/dataStore';
 import PropTypes from 'prop-types';
 import Icon from '../Icon.js';
+import Search from '../Search/Search';
 
 class Header extends React.Component {
     
@@ -22,6 +23,7 @@ class Header extends React.Component {
               <NavLink exact to={toInf} activeClassName='active'>Info</NavLink>
               <NavLink exact to={toFAQ} activeClassName='active'>FAQ</NavLink>
             </nav>
+            <Search />
           </div>
         </Container>
       </header>

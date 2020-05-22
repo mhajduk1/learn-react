@@ -33,7 +33,7 @@ class List extends React.Component {
   }
 }
 List.propTypes = {
-  title: PropTypes.node.isRequired,
+  title: PropTypes.node,
   description: PropTypes.node,
   icon: PropTypes.string,
   image: PropTypes.string,
