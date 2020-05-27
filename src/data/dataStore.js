@@ -135,31 +135,37 @@ const cards = [
   {
     id: 'card-1',
     columnId: 'column-1',
+    listId: 'list-1',
     title: 'This Is Going to Hurt',
   },
   {
     id: 'card-2',
     columnId: 'column-1',
+    listId: 'list-1',
     title: 'Interpreter of Maladies',
   },
   {
     id: 'card-3',
     columnId: 'column-2',
+    listId: 'list-1',
     title: 'Harry Potter',
   },
   {
     id: 'card-4',
     columnId: 'column-2',
+    listId: 'list-1',
     title: 'Star Wars',
   },
   {
     id: 'card-5',
     columnId: 'column-3',
+    listId: 'list-1',
     title: 'The Witcher',
   },
   {
     id: 'card-6',
     columnId: 'column-3',
+    listId: 'list-1',
     title: 'Skyrim',
   },
 ];
